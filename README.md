@@ -1,5 +1,7 @@
 # Nuxt 3 Template Starter
 
+[preview template](https://nuxt3-starter-template.sunly.in/)
+
 ## Features
 
 - [Nuxt3](https://v3.nuxtjs.org)
@@ -46,4 +48,9 @@ Generate static site:
 yarn generate
 ```
 
+## Deploy to Netlify
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sjx1995/nuxt3-template-starter)
+
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
