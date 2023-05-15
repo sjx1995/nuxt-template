@@ -1,8 +1,8 @@
-# Nuxt 3 Starter Template
+# Nuxt 3 Template Starter
 
 ## Features
 
-- [Nuxt 3](https://v3.nuxtjs.org)
+- [Nuxt3](https://v3.nuxtjs.org)
 - [Vue3](https://vuejs.org)
 - [TypeScript](https://www.typescriptlang.org)
 - [Pinia](https://pinia.vuejs.org/)
@@ -16,12 +16,6 @@ Make sure to install the dependencies:
 ```bash
 # yarn
 yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
 ```
 
 ## Development Server
@@ -29,7 +23,7 @@ pnpm install
 Start the development server on `http://localhost:3000`
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 ## Production
@@ -37,13 +31,19 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
+yarn build
 ```
 
 Locally preview production build:
 
 ```bash
-npm run preview
+yarn preview
+```
+
+Generate static site:
+
+```bash
+yarn generate
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
