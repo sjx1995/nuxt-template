@@ -31,6 +31,11 @@ export const useAppStore = defineStore({
           icon: "icon-park-outline:pineapple",
         },
         {
+          name: "Sass/Scss",
+          link: "https://sass-lang.com/",
+          icon: "fa-brands:sass",
+        },
+        {
           name: "Iconify",
           link: "https://iconify.design/",
           icon: "simple-icons:iconify",
