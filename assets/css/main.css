@@ -1,10 +1,30 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-html,
 body {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  background: linear-gradient(
+    to left,
+    #ff8282 0%,
+    #fcfa6e 16%,
+    #70fc70 32%,
+    #82fcfa 50%,
+    #8282fc 66%,
+    #ff82f5 82%,
+    #ff8282 100%
+  );
+  background-size: 1000%;
+  -webkit-background-size: 1000%;
+
+  animation-name: fun-time-awesome;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+@keyframes fun-time-awesome {
+  0% {
+    background-position: left top;
+  }
+  100% {
+    background-position: right top;
+  }
 }

@@ -3,21 +3,6 @@
  * @Author: Sunly
  * @Date: 2023-05-15 06:49:09
 -->
-<template>
-  <li class="leading-10 -ml-5">
-    <a
-      class="group/item relative after:content-[''] after:absolute after:bg-cyan-400 after:bottom-0 after:top-[70%] after:left-[1.3em] after:right-[-0.2em] after:-z-10 after:transition-all hover:after:top-[30%]"
-      :href="props.link"
-    >
-      <nuxt-icon
-        :name="props.icon"
-        class="group-hover/item:text-cyan-500 inline-block align-text-bottom transition-colors mr-1"
-      />
-      {{ props.name }}
-    </a>
-  </li>
-</template>
-
 <script lang="ts" setup>
 const props = defineProps<{
   link: string;
@@ -25,3 +10,52 @@ const props = defineProps<{
   icon: string;
 }>();
 </script>
+
+<template>
+  <li>
+    <a :href="props.link" target="_blank">
+      <Icon :name="props.icon" class="link-icon" />
+      {{ props.name }}
+    </a>
+  </li>
+</template>
+
+<style lang="scss" scoped>
+$hoverColor: rgb(34 211 238);
+
+li {
+  line-height: 40px;
+  margin-left: -64px;
+  list-style-type: none;
+  a {
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 70%;
+      bottom: 0;
+      left: 30px;
+      right: -4px;
+      z-index: -10;
+      background: $hoverColor;
+      transition: top 0.2s;
+    }
+    &:hover {
+      &::after {
+        top: 40%;
+      }
+      .link-icon {
+        color: $hoverColor;
+      }
+    }
+    .link-icon {
+      transition: color 0.4s;
+      font-size: 24px;
+      margin-right: 4px;
+    }
+  }
+}
+</style>

@@ -13,32 +13,27 @@ export const useAppStore = defineStore({
         {
           name: "Nuxt3",
           link: "https://nuxt.com/",
-          icon: "MdiNuxt",
+          icon: "mdi:nuxt",
         },
         {
           name: "Vue3",
           link: "https://vuejs.org/",
-          icon: "MdiVuejs",
+          icon: "mdi:vuejs",
         },
         {
           name: "TypeScript",
           link: "https://www.typescriptlang.org/",
-          icon: "MdiLanguageTypescript",
+          icon: "mdi:language-typescript",
         },
         {
           name: "Pinia",
           link: "https://pinia.vuejs.org/",
-          icon: "IconParkOutlinePineapple",
-        },
-        {
-          name: "TailwindCSS",
-          link: "https://tailwindcss.com/",
-          icon: "MdiTailwind",
+          icon: "icon-park-outline:pineapple",
         },
         {
           name: "Iconify",
           link: "https://iconify.design/",
-          icon: "SimpleIconsIconify",
+          icon: "simple-icons:iconify",
         },
       ],
     };

@@ -3,37 +3,24 @@
  * @Author: Sunly
  * @Date: 2023-05-15 06:19:50
 -->
+<script lang="ts" setup>
+import { useAppStore } from "~/store/app";
+
+const store = useAppStore();
+const linkLists = store.linkLists;
+</script>
+
 <template>
-  <div
-    class="absolute h-[50vh] w-[10000px] animate-[translate-x_8s_linear_infinite] z-[-20]"
-  >
-    <div
-      class="inline-block h-[100%] w-[50%] bg-gradient-to-r from-cyan-300 via-indigo-400 to-cyan-300"
-    ></div>
-    <div
-      class="inline-block h-[100%] w-[50%] bg-gradient-to-r from-cyan-300 via-indigo-400 to-cyan-300"
-    ></div>
-    <div
-      class="absolute bottom-0 left-0 right-0 top-[-60vh] bg-gradient-to-t from-white"
-    ></div>
-  </div>
+  <main>
+    <h1>Hello World</h1>
 
-  <div class="text-center overflow-hidden">
-    <h1 class="text-4xl mt-10 font-bold text-slate-800">Hello World</h1>
-
-    <div class="mt-6">
-      <nuxt-icon
-        name="SolarStarFallMinimalistic2Outline"
-        class="inline-block align-text-bottom scale-x-[-1] mr-1"
-      />
+    <div class="sub-title">
+      <Icon name="solar:star-fall-broken" class="star-icon" />
       feature
-      <nuxt-icon
-        name="SolarStarFallMinimalistic2Outline"
-        class="inline-block align-text-bottom"
-      />
+      <Icon name="solar:star-fall-broken" class="star-icon" />
     </div>
 
-    <ul class="mt-2 text-xl">
+    <ul>
       <HomeLink
         v-for="item in linkLists"
         :key="item.name"
@@ -42,12 +29,31 @@
         :icon="item.icon"
       />
     </ul>
-  </div>
+  </main>
 </template>
 
-<script lang="ts" setup>
-import { useAppStore } from "~/store/app";
+<style lang="scss" scoped>
+main {
+  text-align: center;
+  overflow: hidden;
+  h1 {
+    font-size: 36px;
+    line-height: 40px;
+    margin-top: 80px;
+    font-weight: bold;
+  }
+  .sub-title {
+    margin-top: 40px;
+    font-size: 24px;
+    .star-icon:first-child {
+      transform: scaleX(-1);
+      margin-right: 2px;
+    }
+  }
 
-const store = useAppStore();
-const linkLists = store.linkLists;
-</script>
+  ul {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+}
+</style>
