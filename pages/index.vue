@@ -12,7 +12,7 @@ const linkLists = store.linkLists;
 
 <template>
   <main>
-    <h1>Hello World</h1>
+    <h1>Nuxt3 Template Starter</h1>
 
     <div class="sub-title">
       <Icon name="solar:star-fall-broken" class="star-icon" />
