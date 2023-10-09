@@ -8,8 +8,10 @@
 - [Vue3](https://vuejs.org)
 - [TypeScript](https://www.typescriptlang.org)
 - [Pinia](https://pinia.vuejs.org/)
-- [Tailwind CSS](https://tailwindcss.com)
+- [Sass/Scss](https://sass-lang.com/)
 - [Iconify](https://iconify.design)
+
+> [branch tailwind-css](https://github.com/sjx1995/nuxt3-template-starter/tree/tailwind-css) is using [Tailwind CSS](https://tailwindcss.com) 
 
 ## Setup
 
